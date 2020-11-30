@@ -2,8 +2,11 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
 }
-
+h1, h2, h3{
+    color: rgb(72, 72, 72);
+}
 
 @import "./player";
 @import "./song";
