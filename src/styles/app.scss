@@ -7,6 +7,12 @@
 h1, h2, h3{
     color: rgb(72, 72, 72);
 }
-
+button{
+    background-color: transparent;
+    border: none;
+    font-size: inherit;
+}
 @import "./player";
 @import "./song";
+@import "./library";
+@import "./nav";
