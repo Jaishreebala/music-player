@@ -1,6 +1,7 @@
 .library{
     position: fixed;
     top: 0;
+    left: 0;
     width: 20rem;
     height: 100vh;
     overflow: scroll;
@@ -9,6 +10,11 @@
     transform: translate(-100%);
     opacity: 0;
     transition: 1s;
+}
+.library{
+    h2{
+        padding: 1rem;
+    }
 }
 .library-open{
     transform: translate(0%);
@@ -50,4 +56,10 @@
     background: rgba(155,155,155,0.5);
     border-radius: 20px;
     border: transparent;
+}
+
+@media screen and(max-width: 530px){
+    .library{
+        width: 100%;
+    }
 }

@@ -11,9 +11,21 @@
         padding: 0.5rem;
         cursor: pointer;
         transition: 0.75s;
+        z-index: 1000;
     }
     button:hover{
         background-color: rgb(0, 5, 43);
         color: #fff;
     }
+}
+
+@media screen and(max-width: 530px){
+    .nav-section
+    {
+        button{
+            position: absolute;
+            right: 1rem;
+        }
+    }
+
 }

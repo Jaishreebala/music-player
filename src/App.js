@@ -15,10 +15,10 @@ function App() {
   const audioRef = useRef(null);
 
   return (
-    <div className="App">
+    <div className={`App ${isLibraryOpen ? 'library-active' : ''} `}>
       <Nav isLibraryOpen={isLibraryOpen} setIsLibraryOpen={setIsLibraryOpen} />
       <Song currentSong={currentSong} />
-      <Player currentSong={currentSong} isPlaying={isPlaying} setIsPlaying={setIsPlaying} audioRef={audioRef} />
+      <Player currentSong={currentSong} setCurrentsong={setCurrentsong} isPlaying={isPlaying} setIsPlaying={setIsPlaying} audioRef={audioRef} songs={songs} />
       <Library isLibraryOpen={isLibraryOpen} songs={songs} setSongs={setSongs} isPlaying={isPlaying} setIsPlaying={setIsPlaying} setCurrentsong={setCurrentsong} audioRef={audioRef} />
     </div>
   );
